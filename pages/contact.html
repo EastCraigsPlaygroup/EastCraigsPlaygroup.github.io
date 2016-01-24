@@ -1,0 +1,100 @@
+﻿<div class="row">
+    <div class="box">
+        <div class="col-lg-12">
+            <hr>
+            <h2 class="intro-text text-center">Contact
+                <strong>East Craigs Playgroup</strong>
+            </h2>
+            <hr>
+        </div>
+        <div class="col-md-8">
+            <!-- Embedded Google Map using an iframe - to select your location find it on Google maps and paste the link as the iframe src. If you want to use the Google Maps API instead then have at it! -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d35742.809067119975!2d-3.3038780000000143!3d55.95066200000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887c5dba2d19bd7%3A0x4244a7136a4fd88f!2sEast+Craigs+Church+Centre!5e0!3m2!1sen!2suk!4v1433336088089" width="600" height="450" frameborder="0" style="border:0"></iframe>
+        </div>
+        <div class="col-md-4">
+            <p>Phone:</p>
+            <ul class="fa-ul">
+                <li><i class="fa-li fa fa-phone"></i><strong>0131 339 8336 (during session times only)</strong></li>
+                <li><i class="fa-li fa fa-phone"></i><strong>07770 364912 (any other time)</strong></li>
+            </ul>
+            <p>Email:</p>
+            <ul class="fa-ul">
+                <li><i class="fa-li fa fa-envelope"></i>
+                <strong><a href="mailto:playgroupeastcraigs@gmail.com">playgroupeastcraigs@gmail.com</a></strong>
+            </ul>
+            <p>Address:</p>
+            <ul class="fa-ul">
+                <li>
+                    <i class="fa-li fa fa-map-marker"></i>
+                    <strong>East Craigs Church Centre<br />2 Bughtlin Market<br />Edinburgh<br />EH12 8XP</strong>
+                </li>
+            </ul>
+            <p>
+                <a target="_blank" href="https://www.facebook.com/search/top/?q=east%20craigs%20playgroup"><img src="img/FB-FindUsonFacebook-online-144.png" /></a>
+            </p>
+            <p>
+                <a ng-click="contact.showContactForm()" href="#" onclick="return false;">Go To Contact Form</a>
+            </p>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+<div id="contactFormBox" class="row">
+    <div class="box">
+        <div class="col-lg-12">
+            <hr>
+            <h2 class="intro-text text-center">Contact
+                <strong>form</strong>
+            </h2>
+            <hr>
+            <p>If you would like to register your child at East Craigs Playgroup then please fill out this form and click on the submit button.</p>
+            <form id="contactForm" name="contactForm" role="form" novalidate data-ng-submit="contact.submit()">
+                <div class="row">
+                    <div class="form-group col-lg-4">
+                        <label>Child's Name</label>
+                        <input type="text" name="childName" class="form-control" data-ng-model="contact.childName" required data-ng-minlength="1" data-ng-class="{inputInvalid: contact.hasSubmitted && contactForm.childName.$invalid, inputValid: contact.hasSubmitted && contactForm.childName.$valid}">
+                    </div>
+                    <div class="form-group col-lg-4">
+                        <label>Child's date of birth</label>
+                        <input type="date" name="childBirthDate" class="form-control" data-ng-model="contact.childBirthDate" required data-ng-class="{inputInvalid: contact.hasSubmitted && contactForm.childBirthDate.$invalid, inputValid: contact.hasSubmitted && contactForm.childBirthDate.$valid}">
+                    </div>
+                    <div class="form-group col-lg-4">
+                        <label>Parent's Name</label>
+                        <input type="text" name="parentName" class="form-control" data-ng-model="contact.parentName" required data-ng-class="{inputInvalid: contact.hasSubmitted && contactForm.parentName.$invalid, inputValid: contact.hasSubmitted && contactForm.parentName.$valid}">
+                    </div>
+                    <div class="form-group col-lg-12">
+                        <label>Address</label>
+                        <textarea name="address" class="form-control" rows="4" data-ng-model="contact.address" data-ng-class="{inputInvalid: contact.hasSubmitted && contactForm.address.$invalid, inputValid: contact.hasSubmitted && address.parentName.$valid}"></textarea>
+                    </div>
+                    <div class="form-group col-lg-4">
+                        <label>Email Address</label>
+                        <input type="email" id="email" name="email" class="form-control" data-ng-model="contact.email" data-ng-class="{inputInvalid: contact.hasSubmitted && (contactForm.address.$invalid || !contact.contactDetailsSupplied()), inputValid: contact.hasSubmitted && contactForm.address.$valid && contact.contactDetailsSupplied()}">
+                    </div>
+                    <div class="form-group col-lg-4">
+                        <label>Home phone Number</label>
+                        <input type="tel" id="phone" name="phone" class="form-control" data-ng-model="contact.homePhone" data-ng-class="{inputInvalid: contact.hasSubmitted && !contact.contactDetailsSupplied(), inputValid: contact.hasSubmitted && contact.contactDetailsSupplied()}">
+                    </div>
+                    <div class="form-group col-lg-4">
+                        <label>Mobile Number</label>
+                        <input type="tel" id="mobile" name="mobile" class="form-control" data-ng-model="contact.mobilePhone" data-ng-class="{inputInvalid: contact.hasSubmitted && !contact.contactDetailsSupplied(), inputValid: contact.hasSubmitted && contact.contactDetailsSupplied()}">
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="form-group col-lg-12">
+                        <label>Any comments</label>
+                        <textarea class="form-control" rows="4" data-ng-model="contact.comments"></textarea>
+                    </div>
+                    <div class="form-group col-lg-12">
+                        <input type="hidden" name="save" value="contact">
+                        <button type="submit" class="btn btn-default" data-ng-disabled="contact.hasSubmitted && contactForm.$invalid">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="alertBox" style="display:none; cursor: default">
+    <p id="alertBoxMsg"></p>
+    <input type="button" id="ok" value="OK" ng-click="contact.hideAlertBox()" />
+</div> 

@@ -1,0 +1,5 @@
+C:\projects\Source\Playground\MessageBoard\PlayTest\bin\PlayTest.dll
+C:\projects\Source\Playground\MessageBoard\PlayTest\bin\PlayTest.pdb
+C:\projects\Source\Playground\MessageBoard\PlayTest\obj\Release\PlayTest.csprojResolveAssemblyReference.cache
+C:\projects\Source\Playground\MessageBoard\PlayTest\obj\Release\PlayTest.dll
+C:\projects\Source\Playground\MessageBoard\PlayTest\obj\Release\PlayTest.pdb

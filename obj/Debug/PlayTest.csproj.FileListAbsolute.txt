@@ -1,0 +1,12 @@
+C:\Users\Dave\Documents\Projects\MessageBoard\PlayTest\bin\PlayTest.dll.config
+C:\Users\Dave\Documents\Projects\MessageBoard\PlayTest\bin\PlayTest.dll
+C:\Users\Dave\Documents\Projects\MessageBoard\PlayTest\bin\PlayTest.pdb
+C:\Users\Dave\Documents\Projects\MessageBoard\PlayTest\obj\Debug\PlayTest.csprojResolveAssemblyReference.cache
+C:\Users\Dave\Documents\Projects\MessageBoard\PlayTest\obj\Debug\PlayTest.dll
+C:\Users\Dave\Documents\Projects\MessageBoard\PlayTest\obj\Debug\PlayTest.pdb
+C:\Users\davel\Source\Projects\EastCraigsPlaygroup\PlayTest\bin\PlayTest.dll.config
+C:\Users\davel\Source\Projects\EastCraigsPlaygroup\PlayTest\bin\PlayTest.dll
+C:\Users\davel\Source\Projects\EastCraigsPlaygroup\PlayTest\bin\PlayTest.pdb
+C:\Users\davel\Source\Projects\EastCraigsPlaygroup\PlayTest\obj\Debug\PlayTest.csprojResolveAssemblyReference.cache
+C:\Users\davel\Source\Projects\EastCraigsPlaygroup\PlayTest\obj\Debug\PlayTest.dll
+C:\Users\davel\Source\Projects\EastCraigsPlaygroup\PlayTest\obj\Debug\PlayTest.pdb
