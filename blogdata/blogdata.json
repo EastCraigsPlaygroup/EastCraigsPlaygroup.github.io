@@ -1,4 +1,20 @@
 [{
+    "title": "Father's Day",
+    "date": "2016-06-17",
+    "author": "",
+    "mainText": [
+	  "This week the children have been working on cards and magnets for the special father figure in their lives. Have a great day on Sunday!"
+	       ],
+    "image": "blog/father's day.jpg"	
+},{
+    "title": "Coffee Morning",
+    "date": "2016-06-17",
+    "author": "",
+    "mainText": [
+	  "Thanks to everyone that made today's fundraising coffee morning a success, particularly the committee. There was some delicious home baking. We made over 170 pounds!"
+	       ],
+    "image": "blog/cupcake.jpg"	
+},{
     "title": "Balls, Balls, Balls",
     "date": "2016-06-10",
     "author": "",
