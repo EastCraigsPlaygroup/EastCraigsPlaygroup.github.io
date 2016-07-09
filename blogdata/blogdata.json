@@ -1,4 +1,22 @@
 [{
+    "title": "New Term",
+    "date": "2016-06-30",
+    "author": "",
+    "mainText": [
+	  "For those of you returning to playgroup after the summer, term starts on WEDNESDAY 17th AUGUST"
+	       ],
+    "image": "blog/playgroup logo.jpg"	
+},{
+    "title": "End of Term",
+    "date": "2016-06-30",
+    "author": "",
+    "mainText": [
+	"Thanks to all the children and parents that attended the playgroup end of term party. The children performed their jungle themed songs beautifully!",
+	"It's hard to believe that the 15/16 playgroup year is already over. With our lottery funding, support from our committee and of course the children themselves we have had a successful year, thank you. It is with sadness that we say goodbye to children moving on to nursery and school and we wish them the very brightest of futures. It has been a pleasure knowing each and every one of you.",
+	  "Thank you also for the very kind cards and gifts you gave us."
+	       ],
+    "image": "blog/playgroup logo.jpg"	
+},{
     "title": "Father's Day",
     "date": "2016-06-17",
     "author": "",
