@@ -1,4 +1,4 @@
-﻿    <div class="box fill">
+﻿    <div class="box fill container-fluid">
         <div class="row fill">
             <div class="fill">
                 <!--            <hr>
@@ -11,6 +11,9 @@
             </div>
         </div>
 </div>
+
+<div ng-init="initialize()"></div>
+
 <script type="text/javascript">
     $(window).resize(function () {
         function windowDimensions() { // prototype/jQuery compatible
@@ -34,7 +37,7 @@
         }
         var dim = windowDimensions();
         myIframe = $('#iframeBlog'); // changed the code to use jQuery
-        myIframe.height((dim[1] - $('#headerRow').height() - $('#navRow').height() - $('#footerRow').height() - 150) + "px");
+        myIframe.height((dim[1] - $('#navRow').height() - 150) + "px");
     });
 
     $(window).trigger('resize');
