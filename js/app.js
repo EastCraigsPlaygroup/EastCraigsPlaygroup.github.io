@@ -65,10 +65,10 @@
             })
 
             // route for the lottery page
-            .when('/lottery', {
-                templateUrl: 'pages/lottery.html',
-                controller: 'lotteryController',
-                controllerAs: 'lottery'
+            .when('/co-op', {
+                templateUrl: 'pages/co-op.html',
+                controller: 'coOpController',
+                controllerAs: 'coOp'
             });
 
     });
@@ -308,6 +308,12 @@
     });
 
     app.controller('lotteryController', function ($scope) {
+        $scope.initialize = function () {
+            $scope.setDefaultPage();
+        }
+    });
+
+    app.controller('coOpController', function ($scope) {
         $scope.initialize = function () {
             $scope.setDefaultPage();
         }
