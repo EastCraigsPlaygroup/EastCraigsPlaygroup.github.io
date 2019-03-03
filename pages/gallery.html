@@ -1,0 +1,124 @@
+<div class="box">
+        <div class="row">
+            <div class="col-lg-12">
+                <hr>
+                <h2 class="intro-text text-center">
+                    <strong>Gallery</strong>
+                </h2>
+                <hr>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col-sm-4 text-center row-margin">
+                <div class="container-fluid">
+                    <img class="img-responsive" src="img/gallery/set up room.jpg" alt="">
+                    <div class="col-sm-7 text-justify">
+                        Our hall
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 text-center row-margin">
+                <div class="container-fluid">
+                    <img class="img-responsive" src="img/gallery/book corner.jpg" alt="">
+                    <div class="col-sm-7 text-justify">
+                        Book corner
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 text-center row-margin">
+                <div class="container-fluid">
+                    <img class="img-responsive" src="img/gallery/cafe culture.jpg" alt="">
+                    <div class="col-sm-7 text-justify">
+                        Cafe culture
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col-sm-4 text-center row-margin">
+                <div class="container-fluid">
+                    <img class="img-responsive" src="img/gallery/heroes of the home corner.jpg" alt="">
+                    <div class="col-sm-7 text-justify">
+                        Heroes of the home corner
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 text-center row-margin">
+                <div class="container-fluid">
+                    <img class="img-responsive" src="img/gallery/construction.jpg" alt="">
+                    <div class="col-sm-7 text-justify">
+                        Construction toys
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 text-center row-margin">
+                <div class="container-fluid">
+                    <img class="img-responsive" src="img/gallery/transport area.jpg" alt="">
+                    <div class="col-sm-7 text-justify">
+                        Transport toys
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col-sm-4 text-center row-margin">
+                <div class="container-fluid">
+                    <img class="img-responsive" src="img/gallery/motor skills bears.jpg" alt="">
+                    <div class="col-sm-7 text-justify">
+                        Using motor and sorting skills
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 text-center row-margin">
+                <div class="container-fluid">
+                    <img class="img-responsive" src="img/gallery/painting1.jpg" alt="">
+                    <div class="col-sm-7 text-justify">
+                        Painting
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 text-center row-margin">
+                <div class="container-fluid">
+                    <img class="img-responsive" src="img/gallery/handcraft hens.jpg" alt="">
+                    <div class="col-sm-7 text-justify">
+                        Arts and crafts
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    
+    <div ng-init="initialize()"></div>
+    
+    <script type="text/javascript">
+        $(window).resize(function () {
+            function windowDimensions() { // prototype/jQuery compatible
+                var myWidth = 0, myHeight = 0;
+                if (typeof (window.innerWidth) == 'number') {
+                    //Non-IE or IE 9+ non-quirks
+                    myWidth = window.innerWidth;
+                    myHeight = window.innerHeight;
+                } else if (document.documentElement && (document.documentElement.clientWidth || document.documentElement.clientHeight)) {
+                    //IE 6+ in 'standards compliant mode'
+                    myWidth = document.documentElement.clientWidth;
+                    myHeight = document.documentElement.clientHeight;
+                } else if (document.body && (document.body.clientWidth || document.body.clientHeight)) {
+                    //IE 5- (lol) compatible
+                    myWidth = document.body.clientWidth;
+                    myHeight = document.body.clientHeight;
+                }
+                if (myWidth < 1) myWidth = screen.width; // emergency fallback to prevent division by zero
+                if (myHeight < 1) myHeight = screen.height;
+                return [myWidth, myHeight];
+            }
+            var dim = windowDimensions();
+            myIframe = $('#iframeBlog'); // changed the code to use jQuery
+            myIframe.height((dim[1] - $('#navRow').height() - 150) + "px");
+        });
+    
+        $(window).trigger('resize');
+    </script>

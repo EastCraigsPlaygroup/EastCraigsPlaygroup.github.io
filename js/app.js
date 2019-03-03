@@ -57,6 +57,18 @@
                 controllerAs: 'blogCtrl'
             })
 
+            .when('/gallery', {
+                templateUrl: 'pages/gallery.html',
+                controller: 'galleryController',
+                controllerAs: 'galleryCtrl'
+            })
+
+            .when('/themes', {
+                templateUrl: 'pages/themes.html',
+                controller: 'themesController',
+                controllerAs: 'themesCtrl'
+            })
+
             // route for the contact page
             .when('/contact', {
                 templateUrl: 'pages/contact.html',
@@ -134,6 +146,18 @@
     app.controller('teamController', function ($scope) {
         $scope.initialize = function () {
             $scope.setDefaultPage();
+        }
+    });
+
+    app.controller('galleryController', function ($scope, $http) {
+        $scope.initialize = function () {
+            $scope.setFullPage();
+        }
+    });
+
+    app.controller('themesController', function ($scope, $http) {
+        $scope.initialize = function () {
+            $scope.setFullPage();
         }
     });
 

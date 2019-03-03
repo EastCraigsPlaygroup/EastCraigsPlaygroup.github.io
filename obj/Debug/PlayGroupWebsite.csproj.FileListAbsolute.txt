@@ -1,6 +1,0 @@
-C:\Users\davel\Source\Projects\EastCraigsPlaygroup\PlayGroupWebsite\bin\PlayGroupWebsite.dll.config
-C:\Users\davel\Source\Projects\EastCraigsPlaygroup\PlayGroupWebsite\bin\PlayGroupWebsite.dll
-C:\Users\davel\Source\Projects\EastCraigsPlaygroup\PlayGroupWebsite\bin\PlayGroupWebsite.pdb
-C:\Users\davel\Source\Projects\EastCraigsPlaygroup\PlayGroupWebsite\obj\Debug\PlayGroupWebsite.csprojResolveAssemblyReference.cache
-C:\Users\davel\Source\Projects\EastCraigsPlaygroup\PlayGroupWebsite\obj\Debug\PlayGroupWebsite.dll
-C:\Users\davel\Source\Projects\EastCraigsPlaygroup\PlayGroupWebsite\obj\Debug\PlayGroupWebsite.pdb
