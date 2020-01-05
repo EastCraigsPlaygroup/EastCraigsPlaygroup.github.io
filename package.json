@@ -1,5 +1,5 @@
 {
     "scripts": {
-      "server": "lws"
+      "server": "light-server -s . -p 3000"
     }
   }
