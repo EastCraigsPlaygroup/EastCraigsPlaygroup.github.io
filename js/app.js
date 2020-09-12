@@ -305,7 +305,7 @@
             $http.post("https://formspree.io/xqkgzzre",
 //            $http.post("http://localhost/WebService/WebsiteService/api/email",
                 {
-                    "_replyto": this.address,
+                    "_replyto": this.email,
                     "_subject": "Child placement request for " + this.childName,
                     "message": bodyText
                 }).success(function (data, status, headers, config) {
