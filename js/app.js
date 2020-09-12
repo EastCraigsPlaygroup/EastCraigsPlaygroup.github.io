@@ -302,13 +302,12 @@
             bodyText += getContactText("Mobile phone: ", this.mobilePhone);
             bodyText += getContactText("Comments: ", this.comments);
 
-            $http.post("http://daveltest.azurewebsites.net/api/email",
+            $http.post("https://formspree.io/xqkgzzre",
 //            $http.post("http://localhost/WebService/WebsiteService/api/email",
                 {
-                    "customerId": "1",
-                    "applicationName": "EmailApp",
-                    "subject": "Child placement request for " + this.childName,
-                    "body": bodyText
+                    "_replyto": this.address,
+                    "_subject": "Child placement request for " + this.childName,
+                    "message": bodyText
                 }).success(function (data, status, headers, config) {
                     emailSuccess();
                 }).error(function (data, status, headers, config) {
