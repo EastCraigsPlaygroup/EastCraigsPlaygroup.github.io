@@ -303,7 +303,7 @@
             bodyText += getContactText("Comments: ", this.comments);
 
             $http.post("https://formspree.io/xqkgzzre",
-//            $http.post("http://localhost/WebService/WebsiteService/api/email",
+//            $http.post("https://formspree.io/moqkgbvv",   // Localhost testing
                 {
                     "_replyto": this.email,
                     "_subject": "Child placement request for " + this.childName,
