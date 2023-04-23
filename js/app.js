@@ -76,6 +76,13 @@
                 controllerAs: 'contact'
             })
 
+            // route for the policies page
+            .when('/policies', {
+                templateUrl: 'pages/policies.html',
+                controller: 'policiesController',
+                controllerAs: 'policiesCtrl'
+            })
+            
             // route for the lottery page
             .when('/co-op', {
                 templateUrl: 'pages/co-op.html',
@@ -156,6 +163,12 @@
     });
 
     app.controller('themesController', function ($scope, $http) {
+        $scope.initialize = function () {
+            $scope.setFullPage();
+        }
+    });
+
+    app.controller('policiesController', function ($scope, $http) {
         $scope.initialize = function () {
             $scope.setFullPage();
         }
