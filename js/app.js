@@ -76,6 +76,12 @@
                 controllerAs: 'contact'
             })
 
+            // route for the contact page
+            .when('/familycomments', {
+                templateUrl: 'pages/family-comments.html',
+                controller: 'commentsController'
+            })            
+
             // route for the policies page
             .when('/policies', {
                 templateUrl: 'pages/policies.html',
@@ -151,6 +157,12 @@
     });
 
     app.controller('teamController', function ($scope) {
+        $scope.initialize = function () {
+            $scope.setDefaultPage();
+        }
+    });
+
+    app.controller('commentsController', function ($scope) {
         $scope.initialize = function () {
             $scope.setDefaultPage();
         }
